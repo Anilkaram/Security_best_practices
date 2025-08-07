@@ -24,7 +24,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('sonar-install') {
                     echo 'Running SonarQube analysis...'
-                    sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=travel"
+                    sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=security_project"
                     echo 'SonarQube analysis completed!'
                 }
             }
