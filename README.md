@@ -12,6 +12,7 @@ Type, Bug, Vulnerability, Code Smell, Severity - Major, Critical
 
 # Fixing all the issues 
 from 32 code smells to 12 still working
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d57df173-71bf-4bf7-9a44-4b21676271b4" />
 <img width="1488" height="576" alt="image" src="https://github.com/user-attachments/assets/68bfed5c-6318-4118-9f7a-4716421189bd" />
 
