@@ -1,7 +1,7 @@
 # Security_best_practices
 
 # SonarQube to check Blocker
-Type, Bug, Vulnerability, Code Smell, Severity - Major, Critical
+Types: Bug, Vulnerability, Code Smell, Severity - Major, Critical
 
 # these are Severity Issues and Code Smell issues in code : 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/627337be-58b2-4829-a4db-0f2bd104ce6d" />
