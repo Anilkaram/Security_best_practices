@@ -26,4 +26,6 @@ from 32 code smells to 12 still working as showing failed
 
 <img width="1920" height="1080" alt="Screenshot (320)" src="https://github.com/user-attachments/assets/cda3963b-2c18-483e-ad5e-e4c0e707e0a8" />
 <img width="1920" height="1080" alt="Screenshot (321)" src="https://github.com/user-attachments/assets/4932b8b5-352a-48d0-997e-23ee050f9b5b" />
+<img width="1920" height="1080" alt="Screenshot (322)" src="https://github.com/user-attachments/assets/6ccb9f3e-f71c-4e6c-84e2-9309025b3bf6" />
+
 
