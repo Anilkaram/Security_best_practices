@@ -1,6 +1,6 @@
 # Security_best_practices
 
-# Trivy file system scannig and Images scanning 
+# Trivy file system scanning and Images scanning 
 
 - Trivy is an open-source security scanner designed for DevSecOps pipelines. It scans source code, dependencies, and container images to detect vulnerabilities, misconfigurations, secrets, and software license issues. As a comprehensive tool, Trivy supports both:
 - Code scanning: Identifies vulnerabilities in application source code, third-party libraries, and infrastructure-as-code files like Terraform or Kubernetes manifests.
