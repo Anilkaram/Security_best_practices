@@ -7,13 +7,16 @@
 - Image scanning: Detects issues in container images (e.g., Docker), including vulnerabilities in OS packages and all layers of the image, before deployment to production.
 - Trivy is widely used in CI/CD processes for its simplicity, speed, and versatility, helping teams secure their code and software supply chain throughout development and deployment
 
-Installing Trivy :
+**Installing Trivy :**
 - curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin
   
 **Trivy file scan in Pipeline **
+
 <img width="1920" height="918" alt="Screenshot (326)" src="https://github.com/user-attachments/assets/da77e15d-75e0-4b46-8d1d-dbbfc8b2909f" />
 
-Installing Owasp Dependency Check using Jenkins plugins
+**Installing Owasp Dependency Check using Jenkins plugins**
+
+
 
 # installing cloudwatch agent for log monitoring 
 - use instance ubuntu 22.04
