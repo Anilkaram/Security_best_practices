@@ -38,13 +38,3 @@
 <img width="1919" height="893" alt="Screenshot 2025-08-08 151406" src="https://github.com/user-attachments/assets/647563c6-e18d-427b-9fbc-60f2540462fc" />
 
 
-# Security_best_practices
-
-# Tfsec ( Terraform Security ) :
-  - tfsec is an open-source static analysis security scanner specifically designed for Terraform code.
-  - Its primary usage is to detect vulnerabilities, misconfigurations, and compliance issues in Terraform Infrastructure-as-Code (IaC) files before deployment.
-  - tfsec will scan the specified directory. If no directory is specified, the current working directory will be used.
-  - The exit status will be non-zero if tfsec finds problems, otherwise the exit status will be zero.
-    
-**Installation :**
-- curl -s https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/install_linux.sh | bash
