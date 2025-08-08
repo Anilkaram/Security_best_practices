@@ -16,14 +16,14 @@
 
 **Installing Owasp Dependency Check using Jenkins plugins**
 
-****Dependency Check Reports :****
+- ****Dependency Check Reports :****
 <img width="1919" height="937" alt="image" src="https://github.com/user-attachments/assets/f7a1509e-1126-4c67-a06d-4f83f4ce4b96" />
 <img width="1523" height="605" alt="image" src="https://github.com/user-attachments/assets/7f501f4d-9f30-46ac-86a9-99a8f853a7e2" />
 
-****After Fixing Dependency Issues :****
+- ****After Fixing Dependency Issues :****
 <img width="1503" height="311" alt="image" src="https://github.com/user-attachments/assets/0ca58cd0-ad67-4559-9091-c27c1cdae4ec" />
 
-****Trivy Image Scan Results :****
+- ****Trivy Image Scan Results :****
 
 <img width="1398" height="686" alt="Screenshot 2025-08-08 203956" src="https://github.com/user-attachments/assets/a954bf17-b082-40d3-bbfc-4928ed53f76e" />
 <img width="1229" height="795" alt="image" src="https://github.com/user-attachments/assets/17015af0-9861-4858-a588-9f7245b6c1fc" />
