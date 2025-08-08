@@ -1,31 +1,23 @@
 # Security_best_practices
 
-# SonarQube to check Blocker & Quality Gate as gate keeper
-Types: Bug, Vulnerability, Code Smell, Severity - Major, Critical
+# Trivy file system scannig and Images scanning 
 
-# these are Severity Issues and Code Smell issues in code : 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/627337be-58b2-4829-a4db-0f2bd104ce6d" />
-<img width="1920" height="1080" alt="Screenshot (312)" src="https://github.com/user-attachments/assets/6767f616-3b23-4a8e-a8be-594ecb6d3626" />
-<img width="1920" height="1080" alt="Screenshot (313)" src="https://github.com/user-attachments/assets/e4bcd602-1046-454b-92a5-be8f281a5ede" />
-<img width="1920" height="1080" alt="Screenshot (314)" src="https://github.com/user-attachments/assets/def51ec6-04d7-4cc5-a7ff-5e11cfd25723" />
-<img width="1920" height="1080" alt="Screenshot (315)" src="https://github.com/user-attachments/assets/faa850c0-a6f9-45f0-8733-c27f2727a735" />
+- Trivy is an open-source security scanner designed for DevSecOps pipelines. It scans source code, dependencies, and container images to detect vulnerabilities, misconfigurations, secrets, and software license issues. As a comprehensive tool, Trivy supports both:
+- Code scanning: Identifies vulnerabilities in application source code, third-party libraries, and infrastructure-as-code files like Terraform or Kubernetes manifests.
+- Image scanning: Detects issues in container images (e.g., Docker), including vulnerabilities in OS packages and all layers of the image, before deployment to production.
+- Trivy is widely used in CI/CD processes for its simplicity, speed, and versatility, helping teams secure their code and software supply chain throughout development and deployment
 
-# Fixing all the issues 
-from 32 code smells to 12 still working as showing failed
+Installing Trivy :
+- curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d57df173-71bf-4bf7-9a44-4b21676271b4" />
-<img width="1488" height="576" alt="image" src="https://github.com/user-attachments/assets/68bfed5c-6318-4118-9f7a-4716421189bd" />
-<img width="1920" height="1080" alt="Screenshot (317)" src="https://github.com/user-attachments/assets/06524ec0-77b4-478b-b380-b6fe620468f8" />
+Installing Owasp Dependency Check using Jenkins plugins
 
-# fixed blocker : bugs, code smells, severity issues, security Hotspots, final output :
-
-<img width="1920" height="1080" alt="Screenshot (323)" src="https://github.com/user-attachments/assets/3d86287b-b86c-4e78-aec5-415e533b80e8" />
-<img width="1920" height="1080" alt="Screenshot (324)" src="https://github.com/user-attachments/assets/67a275a4-e5ef-45dc-92fd-06950bc0c62a" />
-
-# with real time monitoring of node for metrics and logs 
-
-<img width="1920" height="1080" alt="Screenshot (320)" src="https://github.com/user-attachments/assets/cda3963b-2c18-483e-ad5e-e4c0e707e0a8" />
-<img width="1920" height="1080" alt="Screenshot (321)" src="https://github.com/user-attachments/assets/4932b8b5-352a-48d0-997e-23ee050f9b5b" />
-<img width="1920" height="1080" alt="Screenshot (322)" src="https://github.com/user-attachments/assets/6ccb9f3e-f71c-4e6c-84e2-9309025b3bf6" />
+# installing cloudwatch agent for log monitoring 
+- use instance ubuntu 22.04
+- install python : apt install python2.7
+- install cloudwatch agent : curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O
+- running agent using : python2.7 awslogs-agent-setup.py --region=us-east-1
+- use AWS user credentials with cloudwatch access and set path for the log location
+- <img width="1919" height="893" alt="Screenshot 2025-08-08 151406" src="https://github.com/user-attachments/assets/647563c6-e18d-427b-9fbc-60f2540462fc" />
 
 
