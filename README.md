@@ -2,6 +2,7 @@
 Types: Bug, Vulnerability, Code Smell, Severity - Major, Critical
 - SonarQube is an open-source platform for continuous inspection of code quality, providing in-depth static and dynamic analysis across multiple programming languages.
 - It integrates with development pipelines to detect bugs, code smells, security vulnerabilities, code duplications, and insufficient test coverage, giving developers actionable feedback to improve reliability, maintainability, and security before deploying software
+
 Installing sonarqube as container :
 - docker run -itd --name sonarqube -p 9000:9000 sonarqube:lts-community
 # these are Severity Issues and Code Smell issues in code : 
