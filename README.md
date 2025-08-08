@@ -21,6 +21,7 @@
 <img width="1523" height="605" alt="image" src="https://github.com/user-attachments/assets/7f501f4d-9f30-46ac-86a9-99a8f853a7e2" />
 
 **After Fixing Dependency Issues :**
+<img width="1503" height="311" alt="image" src="https://github.com/user-attachments/assets/0ca58cd0-ad67-4559-9091-c27c1cdae4ec" />
 
 # installing cloudwatch agent for log monitoring 
 - use instance ubuntu 22.04
