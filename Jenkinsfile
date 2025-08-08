@@ -1,7 +1,13 @@
+@Library('jenkins_library') _
+
+def dirs = ['client', 'server']
+
 pipeline {
     agent any 
     environment {
         scannerHome = tool 'sonar-install'
+        DOCKER_CLIENT = 'anildoc143/travel_ease_website_v6:client'
+        DOCKER_SERVER = 'anildoc143/travel_ease_website_v6:server'
     }
     tools {
         nodejs 'nodejs'
@@ -41,20 +47,27 @@ pipeline {
                 echo 'SonarQube quality gate passed!'
             }
         }
-        stage ('npm install client') {
-            steps {
-                dir('client') {
-                    sh 'npm install'
+        
+        script {
+            dirs.each { d ->
+                stage("npm install ${d}") {
+                    dir(d) {
+                        sh 'npm install'
+                    }
                 }
             }
         }
-        stage ('npm install server') {
-            steps {
-                dir('server') {
-                    sh 'npm install'
+        
+        script {
+            dirs.each { d ->
+                stage("npm test ${d}") {
+                    dir(d) {
+                        sh 'npm test'
+                    }
                 }
             }
         }
+        
         stage ('trivy') {
             steps {
                 sh 'trivy fs --exit-code 1 --severity CRITICAL .'
@@ -68,25 +81,47 @@ pipeline {
         }
         stage ('docker image') {
             steps {
-                sh 'docker build -t anildoc143/travel_ease_website_v6:client'
-                sh 'docker build -t anildoc143/travel_ease_website_v6:server'
+                sh 'docker build -t $DOCKER_CLIENT client'
+                sh 'docker build -t $DOCKER_SERVER server'
             }
         }
         stage ('scan image') {
             steps {
-                sh 'trivy scan  --exit-code 1 --severity CRITICAL anildoc143/travel_ease_website_v6:client || exit 1'
-                sh 'trivy scan  --exit-code 1 --severity CRITICAL anildoc143/travel_ease_website_v6:server || exit 1'
+                sh 'trivy scan  --exit-code 1 --severity CRITICAL $DOCKER_CLIENT || exit 1'
+                sh 'trivy scan  --exit-code 1 --severity CRITICAL $DOCKER_SERVER|| exit 1'
+            }
+        }
+        stage ('docker login') {
+            steps {
+                vaultSecrets(
+                    'github', [
+                    [envVar: 'DOCKERHUB_USER', vaultKey: 'username'],
+                    [envVar: 'DOCKERHUB_PASS', vaultKey: 'password']]
+                ) {
+                    script {
+                        sh 'docker login -u DOCKERHUB_USER -p DOCKERHUB_PASS' 
+                    }
+                }
             }
         }
         stage ('docker push') {
             steps {
-                 script  {
-                     withDockerRegistry(credentialsId: 'dockerhub_credentails') {
-                        sh 'docker push anildoc143/travel_ease_website_v6:client'
-                        sh 'docker push anildoc143/travel_ease_website_v6:server'
-                    }
+                sh 'docker push $DOCKER_CLIENT'
+                sh 'docker push $DOCKER_SERVER'
                 }
             }
+        }
+    }
+    post {
+        always {
+           mail to: 'anilkumarkarampuri3@gmail.com',
+           subject: "Jenkins Build Notification: ${currentBuild.fullDisplayName}",
+                 	body: """\
+                 		Build Status: ${currentBuild.currentResult}
+                 		Project: ${env.JOB_NAME}
+                 		Build Number: ${env.BUILD_NUMBER}
+                 		Build URL: ${env.BUILD_URL}
+                 	"""
         }
     }
 }
