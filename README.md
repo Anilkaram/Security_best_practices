@@ -18,6 +18,7 @@ Installing Owasp Dependency Check using Jenkins plugins
 - install cloudwatch agent : curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O
 - running agent using : python2.7 awslogs-agent-setup.py --region=us-east-1
 - use AWS user credentials with cloudwatch access and set path for the log location
-- <img width="1919" height="893" alt="Screenshot 2025-08-08 151406" src="https://github.com/user-attachments/assets/647563c6-e18d-427b-9fbc-60f2540462fc" />
+- logs 
+<img width="1919" height="893" alt="Screenshot 2025-08-08 151406" src="https://github.com/user-attachments/assets/647563c6-e18d-427b-9fbc-60f2540462fc" />
 
 
