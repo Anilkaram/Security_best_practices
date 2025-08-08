@@ -15,8 +15,9 @@
 <img width="1920" height="918" alt="Screenshot (326)" src="https://github.com/user-attachments/assets/da77e15d-75e0-4b46-8d1d-dbbfc8b2909f" />
 
 **Installing Owasp Dependency Check using Jenkins plugins**
-
-
+**Dependency Check Reports :**
+<img width="1919" height="937" alt="image" src="https://github.com/user-attachments/assets/f7a1509e-1126-4c67-a06d-4f83f4ce4b96" />
+<img width="1523" height="605" alt="image" src="https://github.com/user-attachments/assets/7f501f4d-9f30-46ac-86a9-99a8f853a7e2" />
 
 # installing cloudwatch agent for log monitoring 
 - use instance ubuntu 22.04
