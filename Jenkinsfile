@@ -41,6 +41,53 @@ pipeline {
                 echo 'SonarQube quality gate passed!'
             }
         }
+        stage ('npm install client') {
+            steps {
+                dir('client') {
+                    sh 'npm install'
+                }
+            }
+        }
+        stage ('npm install server') {
+            steps {
+                dir('server') {
+                    sh 'npm install'
+                }
+            }
+        }
+        stage ('trivy') {
+            steps {
+                sh 'trivy fs --exit-code 1 --severity CRITICAL .'
+            }
+        }
+        stage ('owasp') {
+            steps {
+                dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit', odcInstallation: 'owasp-install'
+                dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
+            }
+        }
+        stage ('docker image') {
+            steps {
+                sh 'docker build -t anildoc143/travel_ease_website_v6:client'
+                sh 'docker build -t anildoc143/travel_ease_website_v6:server'
+            }
+        }
+        stage ('scan image') {
+            steps {
+                sh 'trivy scan  --exit-code 1 --severity CRITICAL anildoc143/travel_ease_website_v6:client || exit 1'
+                sh 'trivy scan  --exit-code 1 --severity CRITICAL anildoc143/travel_ease_website_v6:server || exit 1'
+            }
+        }
+        stage ('docker push') {
+            steps {
+                 script  {
+                     withDockerRegistry(credentialsId: 'dockerhub_credentails') {
+                        sh 'docker push anildoc143/travel_ease_website_v6:client'
+                        sh 'docker push anildoc143/travel_ease_website_v6:server'
+                    }
+                }
+            }
+        }
     }
 }
-        
+   
