@@ -9,9 +9,9 @@ using tools like :
   - It integrates with development pipelines to detect bugs, code smells, security vulnerabilities, code duplications, and insufficient test coverage, giving developers actionable feedback to improve reliability, maintainability, and security before deploying software
     
 **2. Trviy :**
-    - Trivy is an open-source security scanner designed for DevSecOps pipelines. It scans source code, dependencies, and container images to detect vulnerabilities, misconfigurations, secrets, and software license issues. As a comprehensive tool, Trivy supports both:
-    - Code scanning: Identifies vulnerabilities in application source code, third-party libraries, and infrastructure-as-code files like Terraform or Kubernetes manifests
-    - Image scanning: Detects issues in container images (e.g., Docker), including vulnerabilities in OS packages and all layers of the image, before deployment to production
+  - Trivy is an open-source security scanner designed for DevSecOps pipelines. It scans source code, dependencies, and container images to detect vulnerabilities, misconfigurations, secrets, and software license issues. As a comprehensive tool, Trivy supports both:
+  - Code scanning: Identifies vulnerabilities in application source code, third-party libraries, and infrastructure-as-code files like Terraform or Kubernetes manifests
+  - Image scanning: Detects issues in container images (e.g., Docker), including vulnerabilities in OS packages and all layers of the image, before deployment to production
       
 **3. Tfsec :**
   - tfsec is an open-source static analysis security scanner specifically designed for Terraform code.
