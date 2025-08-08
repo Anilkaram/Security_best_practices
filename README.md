@@ -24,4 +24,5 @@ for vulnerabilities to solve using code: https://aquasecurity.github.io/tfsec/la
 
 # Finally fixed all the isses :
   
-  <img width="858" height="874" alt="Screenshot 2025-08-09 002834" src="https://github.com/user-attachments/assets/0a0dd089-f452-4d93-9f2c-e32a9f936e09" />
+<img width="1920" height="895" alt="Screenshot (343)" src="https://github.com/user-attachments/assets/3ed08d34-63d7-4b24-b6f8-514aafb5edc2" />
+
