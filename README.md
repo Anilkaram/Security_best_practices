@@ -3,6 +3,7 @@
 Implementing Security practies in CI/CD pipeline to ensure code quality, code security, Image scanning, SAST(static Analysis Software Testing), DAST (Dynamic Analysis Software Testing), Infrastructure code scanning, 
 
 using tools like :
+
 **1. SonarQube :**
   - SonarQube is an open-source platform for continuous inspection of code quality, providing in-depth static and dynamic analysis across multiple programming languages.
   - It integrates with development pipelines to detect bugs, code smells, security vulnerabilities, code duplications, and insufficient test coverage, giving developers actionable feedback to improve reliability, maintainability, and security before deploying software
