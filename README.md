@@ -10,12 +10,13 @@
 - curl -s https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/install_linux.sh | bash
 
 for vulnerabilities to solve using code: https://aquasecurity.github.io/tfsec/latest/
-
+- tfsec repo: https://github.com/aquasecurity/tfsec?tab=readme-ov-file
 for scanning code use # **tfsec .**
 
 - **after scanning **
 
 <img width="1920" height="1032" alt="Screenshot (329)" src="https://github.com/user-attachments/assets/07325ab1-fc52-4391-987e-9e640a62b874" />
+
 
 <img width="1920" height="987" alt="Screenshot (328)" src="https://github.com/user-attachments/assets/9410d24d-4ff7-44a8-987f-d6a9c6719297" />
 
