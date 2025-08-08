@@ -11,7 +11,7 @@
 
 for vulnerabilities to solve using code: https://aquasecurity.github.io/tfsec/latest/
 - tfsec repo: https://github.com/aquasecurity/tfsec?tab=readme-ov-file
-for scanning code use # **tfsec .**
+# for scanning code use # **tfsec .**
 
 
 - **after scanning terraform code**
