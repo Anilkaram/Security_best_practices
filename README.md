@@ -9,6 +9,7 @@
 
 Installing Trivy :
 - curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin
+  
 **Trivy file scan in Pipeline **
 <img width="1920" height="918" alt="Screenshot (326)" src="https://github.com/user-attachments/assets/da77e15d-75e0-4b46-8d1d-dbbfc8b2909f" />
 
