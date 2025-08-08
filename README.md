@@ -1,6 +1,6 @@
 # Security_best_practices
 
-# SonarQube to check Blocker
+# SonarQube to check Blocker & Quality Gate as gate keeper
 Types: Bug, Vulnerability, Code Smell, Severity - Major, Critical
 
 # these are Severity Issues and Code Smell issues in code : 
