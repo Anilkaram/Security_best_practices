@@ -1,7 +1,7 @@
-# Security_best_practices
-
 # SonarQube to check Blocker & Quality Gate as gate keeper
 Types: Bug, Vulnerability, Code Smell, Severity - Major, Critical
+- SonarQube is an open-source platform for continuous inspection of code quality, providing in-depth static and dynamic analysis across multiple programming languages.
+- It integrates with development pipelines to detect bugs, code smells, security vulnerabilities, code duplications, and insufficient test coverage, giving developers actionable feedback to improve reliability, maintainability, and security before deploying software
 
 # these are Severity Issues and Code Smell issues in code : 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/627337be-58b2-4829-a4db-0f2bd104ce6d" />
