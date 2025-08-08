@@ -21,5 +21,7 @@ for vulnerabilities to solve using code: https://aquasecurity.github.io/tfsec/la
 
 - trying to fix issues using code, getting fixes solution from https://aquasecurity.github.io/tfsec/latest/ issues droped from 33 to 16
 <img width="1920" height="1080" alt="Screenshot (331)" src="https://github.com/user-attachments/assets/d85ea10e-6f00-471f-850b-7ec9929ad562" />
+
 - Finally fixed all the isses :
+  
   <img width="858" height="874" alt="Screenshot 2025-08-09 002834" src="https://github.com/user-attachments/assets/0a0dd089-f452-4d93-9f2c-e32a9f936e09" />
