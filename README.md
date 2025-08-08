@@ -23,6 +23,11 @@
 **After Fixing Dependency Issues :**
 <img width="1503" height="311" alt="image" src="https://github.com/user-attachments/assets/0ca58cd0-ad67-4559-9091-c27c1cdae4ec" />
 
+**Trivy Image Scan Results :**
+
+<img width="1398" height="686" alt="Screenshot 2025-08-08 203956" src="https://github.com/user-attachments/assets/a954bf17-b082-40d3-bbfc-4928ed53f76e" />
+<img width="1229" height="795" alt="image" src="https://github.com/user-attachments/assets/17015af0-9861-4858-a588-9f7245b6c1fc" />
+
 # installing cloudwatch agent for log monitoring 
 - use instance ubuntu 22.04
 - install python : apt install python2.7
