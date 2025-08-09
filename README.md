@@ -8,7 +8,7 @@ using tools like :
   - SonarQube is an open-source platform for continuous inspection of code quality, providing in-depth static and dynamic analysis across multiple programming languages.
   - It integrates with development pipelines to detect bugs, code smells, security vulnerabilities, code duplications, and insufficient test coverage, giving developers actionable feedback to improve reliability, maintainability, and security before deploying software
     
-**2. Trviy :** n branch (Trivy)
+**2. Trviy :** in branch (Trivy)
   - Trivy is an open-source security scanner designed for DevSecOps pipelines. It scans source code, dependencies, and container images to detect vulnerabilities, misconfigurations, secrets, and software license issues. As a comprehensive tool, Trivy supports both:
   - Code scanning: Identifies vulnerabilities in application source code, third-party libraries, and infrastructure-as-code files like Terraform or Kubernetes manifests
   - Image scanning: Detects issues in container images (e.g., Docker), including vulnerabilities in OS packages and all layers of the image, before deployment to production
