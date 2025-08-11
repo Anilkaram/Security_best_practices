@@ -91,8 +91,8 @@ pipeline {
         }
         stage ('scan image') {
             steps {
-                sh 'trivy scan  --exit-code 1 --severity CRITICAL $DOCKER_CLIENT || exit 1'
-                sh 'trivy scan  --exit-code 1 --severity CRITICAL $DOCKER_SERVER|| exit 1'
+                sh 'trivy image  --exit-code 1 --severity CRITICAL $DOCKER_CLIENT || exit 1'
+                sh 'trivy image  --exit-code 1 --severity CRITICAL $DOCKER_SERVER|| exit 1'
             }
         }
         stage ('docker login') {
