@@ -48,21 +48,25 @@ pipeline {
             }
         }
         
-        script {
-            dirs.each { d ->
-                stage("npm install ${d}") {
-                    dir(d) {
-                        sh 'npm install'
+        stage ('npm install ${d}') {
+            steps {
+                script {
+                    dirs.each { d -> 
+                        dir(d) {
+                            sh 'npm install'
+                        }
                     }
                 }
             }
         }
         
-        script {
-            dirs.each { d ->
-                stage("npm test ${d}") {
-                    dir(d) {
-                        sh 'npm test'
+        stage ('npm test ${d}') {
+            steps {
+                script {
+                    dirs.each { d -> 
+                        dir(d) {
+                            sh 'npm test'
+                        }
                     }
                 }
             }
